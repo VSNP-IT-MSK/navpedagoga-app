@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>НавигаторПедагога — цифровое наставничество для молодых учителей</title>
+<meta name="description" content="Платформа наставничества для молодых педагогов: ИИ-наставник вместо теста, дорожная карта по 6 компетенциям, каталог мероприятий.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- ======================= LANDING ======================= -->
+<div id="landing">
+  <header class="landing-header">
+    <div class="container">
+      <div class="brand"><span class="brand-mark">🧭</span> НавигаторПедагога</div>
+      <nav class="landing-nav">
+        <a href="#features">Возможности</a>
+        <a href="#ai">ИИ-наставник</a>
+        <a href="#competencies">Компетенции</a>
+        <a href="#demo">Демо-доступ</a>
+      </nav>
+      <div style="display:flex; gap:10px;">
+        <button class="btn btn-secondary btn-sm" id="btnOpenLogin">Войти</button>
+        <button class="btn btn-primary btn-sm" id="btnOpenRegister">Начать бесплатно</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <div class="hero-eyebrow">🧭 Методология Поляковой Г.Д. · МГУ 2022–2023</div>
+        <h1>Второй наставник, который <em>говорит</em>, а не тестирует</h1>
+        <p class="lead">ИИ-ассистент сам ведёт разговор с молодым педагогом, определяет сильные и слабые стороны по 6 направлениям — а затем ищет в интернете реальные мероприятия именно для вашего региона (профсоюз образования, региональные ИРО и министерства) и собирает персональную дорожную карту.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" id="btnHeroStart">Начать бесплатно</button>
+          <button class="btn btn-secondary" id="btnHeroDemo">Посмотреть демо-доступ ↓</button>
+        </div>
+        <div class="hero-stats">
+          <div><b>6</b><span>КОМПЕТЕНЦИЙ</span></div>
+          <div><b>1:1</b><span>ИИ-ДИАЛОГ</span></div>
+          <div><b>24/7</b><span>ВТОРОЙ НАСТАВНИК</span></div>
+        </div>
+      </div>
+      <div class="route-card">
+        <h3>🗺️ Дорожная карта · пример</h3>
+        <div class="sub">М. Петров · История · 1 год стажа</div>
+        <div class="route-diagram" id="heroRoute"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow">Как это работает</div>
+        <h2>Всё, что нужно молодому педагогу в первый год</h2>
+        <p>От диагностики до цифрового портфолио — шесть шагов методологии в одном инструменте.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card"><div class="feature-icon tint-purple">💬</div><h4>Диалог вместо теста</h4><p>ИИ-наставник задаёт живые вопросы, слушает свободные ответы и сам считывает уровень компетенций.</p></div>
+        <div class="feature-card"><div class="feature-icon tint-magenta">🗺️</div><h4>Персональная карта</h4><p>Автоматический маршрут по 6 направлениям с приоритетами, этапами и конкретными мероприятиями.</p></div>
+        <div class="feature-card"><div class="feature-icon tint-yellow">📅</div><h4>Каталог мероприятий</h4><p>Вебинары, открытые уроки, конкурсы и курсы — подобраны под ваши дефициты и предмет.</p></div>
+        <div class="feature-card"><div class="feature-icon tint-green">🤝</div><h4>Живой наставник рядом</h4><p>Чат с закреплённым наставником, заметки, рефлексия — цифровое сопровождение пары.</p></div>
+        <div class="feature-card"><div class="feature-icon tint-purple">📈</div><h4>Прогресс без давления</h4><p>6 стадий алгоритма показывают путь от диагностики до цифрового портфолио.</p></div>
+        <div class="feature-card"><div class="feature-icon tint-magenta">🛠️</div><h4>Панель администратора</h4><p>Управление педагогами, наставниками и мероприятиями школы в одном месте.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ai" style="background:var(--bg-alt);">
+    <div class="container ai-showcase">
+      <div class="copy">
+        <div class="section-eyebrow">Ключевая фишка</div>
+        <h2>ИИ-ассистент — как второй наставник</h2>
+        <p>Вместо формы с баллами — обычный разговор. Педагог отвечает своими словами, ИИ уточняет детали и сам определяет баллы по 6 компетенциям, а затем ищет в интернете реальные мероприятия под ваш регион.</p>
+        <ul>
+          <li><span class="dot">✓</span> Открытые вопросы по каждому направлению + быстрые варианты ответа</li>
+          <li><span class="dot">✓</span> Уточняющие вопросы при выявленных трудностях</li>
+          <li><span class="dot">✓</span> Поиск реальных мероприятий: профсоюз образования, региональные ИРО, министерства</li>
+          <li><span class="dot">✓</span> Свободный чат в любой момент — план на неделю, подготовка к аттестации, советы по классу</li>
+        </ul>
+        <button class="btn btn-primary" id="btnAiShowcase">Попробовать диалог с ИИ</button>
+      </div>
+      <div class="mock-chat">
+        <div class="row ai"><div class="bubble">📋 Методическое · Насколько легко вам планировать уроки и разрабатывать рабочую программу?</div></div>
+        <div class="row me"><div class="bubble">Если честно, сложно укладываться в стандарт и не терять логику темы.</div></div>
+        <div class="row ai"><div class="bubble">Понимаю. Сложнее с самим планированием или с тем, чтобы уложиться в рабочую программу?</div></div>
+        <div class="row me"><div class="bubble">Скорее с рабочей программой.</div></div>
+        <div class="row ai"><div class="bubble">Спасибо, зафиксировал — добавлю практикум по разработке РП в вашу карту 🗺️</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="competencies">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow">§3.2 диссертации</div>
+        <h2>6 направлений компетенций</h2>
+        <p>Основа методологии Поляковой Г.Д. — на них строится каждый диалог с ИИ-наставником и каждая дорожная карта.</p>
+      </div>
+      <div class="comp-grid" id="compGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="demo" style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-eyebrow">Быстрый старт</div>
+        <h2>Демо-доступ</h2>
+        <p>Три роли, один пароль — <span class="mono">123456</span>. Нажмите на карточку, чтобы войти.</p>
+      </div>
+      <div class="accounts-grid" id="demoAccounts"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand" style="font-size:15px;"><span class="brand-mark" style="width:28px;height:28px;font-size:13px;">🧭</span> НавигаторПедагога</div>
+      <p>Методология: Полякова Г.Д., МГУ 2022–2023 · Статичное веб-демо, все данные хранятся локально в вашем браузере.</p>
+    </div>
+  </footer>
+</div>
+
+<!-- ======================= AUTH MODAL ======================= -->
+<div id="authModal" class="auth-backdrop hidden">
+  <div class="auth-card">
+    <button class="close-x" id="authClose">✕</button>
+    <div class="auth-tabs">
+      <button id="tabLogin" class="active">Вход</button>
+      <button id="tabRegister">Регистрация</button>
+    </div>
+    <div id="authError"></div>
+    <form id="loginForm">
+      <div class="field"><label>Email</label><input type="email" id="loginEmail" required placeholder="user@np.ru"></div>
+      <div class="field"><label>Пароль</label><input type="password" id="loginPass" required placeholder="123456"></div>
+      <button class="btn btn-primary btn-block" type="submit">Войти</button>
+      <p class="form-hint">Демо-пароль для всех аккаунтов: 123456</p>
+    </form>
+    <form id="registerForm" class="hidden">
+      <div class="field"><label>Полное имя</label><input type="text" id="regName" required placeholder="Мария Сергеевна Иванова"></div>
+      <div class="field"><label>Email</label><input type="email" id="regEmail" required placeholder="you@school.ru"></div>
+      <div class="field"><label>Пароль</label><input type="password" id="regPass" required placeholder="Минимум 4 символа"></div>
+      <div class="grid-2">
+        <div class="field"><label>Предмет</label><input type="text" id="regSubject" required placeholder="История"></div>
+        <div class="field"><label>Стаж (лет)</label><input type="number" id="regYears" min="0" max="60" value="0" required></div>
+      </div>
+      <div class="field"><label>Школа</label><input type="text" id="regSchool" placeholder="ГБОУ Школа №1248"></div>
+      <div class="field"><label>Регион</label><input type="text" id="regRegion" required placeholder="например, Республика Татарстан"></div>
+      <p class="form-hint" style="margin:-8px 0 12px; text-align:left;">По региону ИИ-наставник будет искать реальные мероприятия для молодых педагогов.</p>
+      <div class="field"><label>Роль</label>
+        <select id="regRole">
+          <option value="user">Молодой педагог</option>
+          <option value="mentor">Наставник</option>
+        </select>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Создать аккаунт</button>
+    </form>
+  </div>
+</div>
+
+<!-- ======================= APP SHELL ======================= -->
+<div id="shell" class="shell hidden"></div>
+
+<div id="toastWrap" class="toast-wrap"></div>
+
+<script>
+  // Адрес развёрнутого бэкенда. Для локального запуска не трогайте.
+  // После деплоя backend замените на публичный адрес вашего API, например:
+  // window.NP_API_BASE = "https://navigator-pedagoga-api.onrender.com/api";
+  window.NP_API_BASE = window.NP_API_BASE || "http://localhost:4000/api";
+</script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
